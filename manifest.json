@@ -1,0 +1,15 @@
+{
+  "name": "Live. Laugh. Invest.",
+  "short_name": "💰💰💰",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#367588",
+  "background_color": "#8391b0",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

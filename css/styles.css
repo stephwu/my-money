@@ -1,0 +1,154 @@
+/* General Styles */
+@font-face {
+    font-family: myFont;
+    src: url(blanch_caps.otf);
+}
+
+body, html {
+    font-family: 'Rajdhani', Helvetica, Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #36454f;
+}
+
+ul {
+	padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #36454f;
+}
+
+a:hover {
+	color: #8391b0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    background: #fff;
+}
+
+nav {
+    height: inherit;
+}
+
+nav a {
+	font-weight: bold;
+    padding: 1rem;
+}
+
+nav, .hero, .tertiary-img {
+    display: flex;
+    justify-content: center;
+}
+
+/* Imagery of bgs */
+.hero {
+    height: 90%;
+    background-image: url('../img/sunglasses.jpg');
+    background-repeat: no-repeat;
+    /* parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h2, .tertiary-img h2 {
+    font-family: myFont, sans-serif;
+    font-size: 5rem;
+    color: #f5f5f5;
+    align-self: center;
+}
+
+.hero h2 {
+    padding-top: 30rem;
+}
+
+.secondary-img {
+    height: 70%;
+    background-image: url('../img/gold-bank.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.tertiary-img {
+    height: 70%; 
+    background-image: url('../img/money-in-pocket.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.tertiary-img h2 {
+	padding-top: 20rem;
+}
+
+/* Content */
+.invest-types, .bank-info, .action-reminders {
+    width: 64em;
+    margin: 3rem auto;
+}
+
+.invest-types ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.invest-types li {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.bank-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bank-info article {
+    width: calc(100%/3);
+    padding-left: 7rem;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: 1rem;
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    color: #f5f5f5;
+    border: none;
+    border-radius: .3rem;
+    background: #8391b0;
+}
+
+footer {
+	font-size: 0.8rem;
+    display: flex;
+    height: 8%;
+    justify-content: center;
+}
+
+/* No parralax scrolling for mobile devices */
+/* width: 1024px; */
+@media only screen and (max-width: 64em) {
+    .hero, .secondary-img, .tertiary-img {
+        background-attachment: scroll;
+    }
+}
+

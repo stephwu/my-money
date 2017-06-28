@@ -1,2 +1,2 @@
 # my-money
-PGA on investing site.
+Progressive Web App on investing site.
